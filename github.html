@@ -49,12 +49,25 @@
                   <li><strong>git add index.html</strong> - добавляет файл для отслеживания git</li>
                   <li><strong>git add .</strong> - добавляет все файлы для отслеживания git</li>
                   <li><strong>.gitignore</strong> - Создаем такой файл в проекте. Если мы хотим добавить некоторые файлы или папки в исключение для отслеживания. Пример папка /logs или файл error.txt</li>
-                  <li><strong>git commit -m 'nameCommit'</strong> - создает коммит с сообщением. Коммит - это фикс версии, (условно снимок-копия). <br> Если выскочила ошибка Author identity unknown</li>
-                  <li><strong></strong> - </li>
-                  <li><strong></strong> - </li>
-                  <li><strong></strong> - </li>
-                  <li><strong></strong> - </li>
-                  <li><strong></strong> - </li>
+
+                  <h3>git config</h3>
+                  Перед выполнением коммитов нужно представиться гиту, коммандами:
+                  <li><strong>git config --global user.name</strong> - Показывает имя пользователя </li>
+                  <li><strong>git config --global user.name 'new user'</strong> - Изменяет имя пользователя</li>
+                  <li><strong>git config --global user.email</strong> - Показывает email пользователя </li>
+                  <li><strong>git config --global user.email 'test@mail.ru'</strong> - Изменяет email пользователя</li>
+                  <p></p>
+                  <li><strong>git commit -m 'nameCommit'</strong> - создает коммит с сообщением. Коммит - это фикс версии, (условно инкрементная-копия).</li>
+                  <h3>Работа с ветками</h3>
+                  <li><strong>git branch</strong> - показывает список веток</li>
+                  <li><strong>git branch branchName</strong> - создает новую ветку branchName </li>
+                  <li><strong>git branch -D branchName</strong> - удаляет ветку branchName </li>
+                  <li><strong>git checkout branchName</strong> - переключиться на ветку branchName</li>
+                  <li><strong>git checkout -b branchName</strong> - создает и переключается на ветку branchName</li>
+
+                  <h4>Объединение веток</h4>
+                  <li><strong>git merge branchName</strong> - совмещает текущую ветку с branchName</li>
+
                   <li><strong></strong> - </li>
                   <li><strong></strong> - </li>
                   <li><strong></strong> - </li>
